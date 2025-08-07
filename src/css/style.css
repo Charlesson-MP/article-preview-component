@@ -108,6 +108,11 @@ main {
     cursor: pointer;
 }
 
+.btn-share:hover {
+    background-color: var(--grayish-blue);
+    color: var(--light-grayish-blue);
+}
+
 .btn-active {
     background-color: var(--desaturated-dark-blue);
     color: var(--light-grayish-blue);
@@ -145,4 +150,10 @@ main {
 .medias i {
     color: var(--light-grayish-blue);
     font-size: 1.5rem;
+}
+
+.facebook:hover, 
+.twitter:hover, 
+.pinterest:hover {
+    color: var(--grayish-blue);
 }

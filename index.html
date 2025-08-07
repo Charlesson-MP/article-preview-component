@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://kit.fontawesome.com/aa9d215442.js" crossorigin="anonymous"></script>
     <title>Article preview component</title>
 </head>
 <body>
     <main>
         <section class="img-container">
-            <img src="./src/images/drawers.jpg" alt="Drawer image">
+            <!-- <img src="./src/images/drawers.jpg" alt="Drawer image"> -->
         </section>
         <section class="text-container">
             <p class="highlight-text">
@@ -23,14 +24,22 @@
 
         </section>
         <footer class="interaction-container">
-            <img src="./src/images/avatar-michelle.jpg" alt="Michelle avatar">
-            <div class="interaction-text">
-                <p class="name">Michelle Appleton</p>
-                <p class="date">28 Jun 2020</p>
+            <div class="interaction-info">
+                <img src="./src/images/avatar-michelle.jpg" alt="Michelle avatar">
+                <div>
+                    <p class="name">Michelle Appleton</p>
+                    <p class="date">28 Jun 2020</p>
+                </div>
             </div>
-            <button type="button" title="Share">
-                <img src="./src/images/icon-share.svg" alt="Share icon">
-            </button>
+            <i class="fa-solid fa-share btn-share"></i>
+            <section class="social-medias social-medias-on">
+                <div class="medias">
+                    <p class="share">share</p>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </section>
         </footer>
     </main>
     <script src="./src/script/script.js"></script>

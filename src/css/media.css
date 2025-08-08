@@ -1,0 +1,46 @@
+@media screen and (min-width: 64rem) {
+    /* main settings */
+    main {
+        width: 45rem;
+        max-width: 45rem;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+            "img text"
+            "img share";
+        overflow: visible;
+    }
+
+    /* img-container settings */
+    .img-container {
+        grid-area: img;
+        aspect-ratio: 11 / 10;
+        background-position: left center;
+    }
+
+
+    /* social-medias settings */
+    .social-medias {
+        position: absolute;
+        top: -3.5rem;
+        left: 14.2rem;
+        background-color: var(--very-dark-grayish-blue);
+        width: 16.8rem;
+        padding: 1.8rem 0;
+        height: 1.4rem;
+        align-items: center;
+        border-radius: .7rem;
+    }
+
+    .social-medias::after {
+        content: "";
+        position: absolute;
+        bottom: -1.8rem;
+        left: 54%;
+        transform: translateX(-50%);
+        border-width: 15px;
+        border-style: solid;
+        border-color: var(--very-dark-grayish-blue) transparent transparent;
+    }
+}

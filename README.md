@@ -1,68 +1,121 @@
-# Article Preview Component
+# 📰 Article Preview Component
 
-![Preview do Projeto](./src/images/preview.png)
+## 📖 About the Project
 
-Um componente de pré-visualização de artigo com design responsivo, inspirado em desafios do Frontend Mentor.  
-O projeto conta com funcionalidade para exibir e ocultar um balão de compartilhamento de redes sociais, incluindo uma seta indicativa, com posicionamento preciso no layout desktop.
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- **HTML5**
-- **CSS3**  
-  - Flexbox  
-  - CSS Grid  
-  - Positioning (`absolute`, `relative`, `inset`, `top`, `left`)
-  - Media Queries para responsividade
-- **JavaScript (ES6+)** para manipulação do DOM
+A responsive article preview component developed as part of a [Frontend Mentor](https://www.frontendmentor.io/) challenge. The project features an article card with an interactive social sharing menu, focusing on responsive layouts, CSS positioning techniques, and DOM manipulation with JavaScript.
 
 ---
 
-## 💡 Grande Desafio
+## ✨ Features
 
-O maior desafio do projeto foi manipular a `section` `.social-medias` para que aparecesse corretamente no layout desktop e mobile.  
-Foi necessário ajustar propriedades como:
-
-- `position: absolute`
-- `top` e `left` para posicionamento preciso
-- `inset` para ocupar a área no mobile
-- `::after` para criar a seta indicativa abaixo do balão
+- Responsive layout optimized for mobile and desktop screens.
+- Article preview card featuring an image, author information, publication date, and description.
+- Interactive social sharing menu that can be toggled by clicking the share button.
+- Different menu positioning and presentation depending on the screen size.
+- Click-outside behavior to close the sharing menu.
 
 ---
 
-## 📂 Estrutura de Arquivos
-```
+## 🛠️ Built With
+
+- **HTML5** – Semantic markup and document structure.
+- **CSS3**
+  - CSS custom properties.
+  - Flexbox and CSS Grid.
+  - Positioning (`relative` and `absolute`).
+  - Pseudo-elements.
+  - Media queries and mobile-first workflow.
+- **JavaScript (ES6+)** – DOM manipulation and interactive menu behavior.
+
+---
+
+## 🎯 Main Challenge
+
+One of the main challenges was positioning the social sharing menu consistently across different screen sizes.
+
+The component required different positioning strategies for desktop and mobile layouts:
+
+- **Desktop:** The sharing menu appears as a floating element positioned relative to the article card, with a small arrow pointing toward the share button.
+- **Mobile:** The sharing menu occupies the bottom area of the card, adapting its layout to the available screen space.
+
+To achieve this, CSS positioning properties such as `position: absolute`, `top`, `left`, and `inset` were combined with the `::after` pseudo-element to create the menu's visual arrow.
+
+---
+
+## 📂 Project Structure
+
+```text
 article-preview-component/
 │
 ├── index.html
-├── src/
-│ ├── css/
-│ │ ├── style.css # Estilos base (mobile-first)
-│ │ └── media.css # Estilos para telas desktop
-│ ├── images/ # Imagens e favicon
-│ │ ├──avatar-michelle.jpg
-│ │ ├── drawers.jpg
-│ │ ├── favicon-32x32.png
-│ │ └── preview.png
-│ └── script/
-│ │ └── script.js # Lógica para exibir/ocultar redes sociais
+├── LICENSE
+├── README.md
+│
+└── src/
+    ├── css/
+    │   ├── style.css
+    │   └── media.css
+    │
+    ├── images/
+    │   ├── avatar-michelle.jpg
+    │   ├── drawers.jpg
+    │   ├── favicon-32x32.png
+    │   └── preview.png
+    │
+    └── script/
+        └── script.js
 ```
 
 ---
 
-## 🌐 Como Acessar
+## 🚀 Getting Started
 
-### 🔹 Versão Online
-Acesse o projeto no GitHub Pages pelo link:  
-[charlesson-mp.github.io/article-preview-component](https://charlesson-mp.github.io/article-preview-component)
+To run this project locally, follow these steps:
 
-### 🔹 Clonando o Repositório
+**1. Clone the repository**
+
 ```bash
-# Clonar o repositório
-git clone https://github.com/charlesson-mp/article-preview-component.git
+git clone https://github.com/Charlesson-MP/article-preview-component.git
+```
 
-# Acessar a pasta do projeto
+**2. Navigate to the project directory**
+
+```bash
 cd article-preview-component
+```
 
-# Abrir o arquivo index.html no navegador
+**3. Open the project**
+
+Open the `index.html` file in your preferred browser.
+
+No additional dependencies or installation steps are required.
+
+---
+
+## 🔮 Future Improvements
+
+- Improve accessibility by adding appropriate ARIA attributes to the share button and menu.
+- Implement keyboard navigation and support for closing the menu with the `Escape` key.
+- Improve focus and hover states for interactive elements.
+- Make social sharing options fully functional with their respective sharing URLs.
+- Review and refine the JavaScript interaction logic for better maintainability.
+
+---
+
+## 🌐 Live Demo
+
+[View Live Project](https://charlesson-mp.github.io/article-preview-component/)
+
+---
+
+## 👨‍💻 Author
+
+**Charlesson Mendes Pereira**
+
+- GitHub: [@Charlesson-MP](https://github.com/Charlesson-MP)
+
+---
+
+## 📄 License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE).

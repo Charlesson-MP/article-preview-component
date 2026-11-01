@@ -6,6 +6,12 @@ A responsive article preview component developed as part of a [Frontend Mentor](
 
 ---
 
+## 🎨 Preview
+
+![Page preview image](./src/images/preview.png)
+
+---
+
 ## ✨ Features
 
 - Responsive layout optimized for mobile and desktop screens.
